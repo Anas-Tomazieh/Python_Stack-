@@ -1,0 +1,36 @@
+
+def countdawn (a):
+    l = []
+    for i in range (a,-1,-1):
+        l.append(i)
+
+    return l
+c = countdawn(5)
+print("The List is ",c)
+............................................
+def print_and_return (num_list):
+    print(num_list[0])
+    return num_list[1]
+print(print_and_return([10,12]))
+..............................................
+def first_plus_length (num_list):
+    first_value = num_list[0]
+    length_of_list = len(num_list)
+    return first_value + length_of_list 
+print(first_plus_length([1,2,3,4,5]))
+.............................................
+def values_greater_than_second (ori_list):
+    new_list  = []
+    second_val = ori_list [1]
+    for i in range (len(ori_list)):
+        if ori_list[i]>second_val:
+            new_list.append(ori_list[i])
+    return new_list
+print(values_greater_than_second([5,2,3,2,1,4]))
+....................................................
+def length_and_value (size,value):
+    new_list = []
+    for num_times in range (size):
+        new_list.append(value)
+    return new_list
+print(length_and_value(4,2))
